@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_marginTop="10sp"
+        android:orientation = "vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_city"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id = "@+id/mySpinner"
+            android:layout_width = "match_parent"
+            android:layout_height = "40sp"
+            android:prompt = "@string/label_city"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_mall"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id = "@+id/mySpinner2"
+            android:layout_width = "match_parent"
+            android:layout_height = "40sp"
+            android:prompt = "@string/label_mall"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_shop"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id = "@+id/mySpinner3"
+            android:layout_width = "match_parent"
+            android:layout_height = "40sp"
+            android:prompt = "@string/label_shop"
+            />
+
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/llProgressBar"
+        android:visibility="gone"
+        layout="@layout/layout_progress_bar_with_text"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:visibility="invisible"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

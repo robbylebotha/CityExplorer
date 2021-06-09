@@ -1,0 +1,3 @@
+include ':city-explorer-sdk'
+include ':app'
+rootProject.name = "City Explorer"
